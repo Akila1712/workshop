@@ -447,7 +447,6 @@
       </div>
       <h3>Registration Successful!</h3>
       <p>Thank you for registering for the Free AI App Development Workshop.<br>Our team will contact you shortly with further details.</p>
-      <span class="ref" id="refNo">REF: BSC-000000</span>
     </div>
   </div>
 
@@ -519,12 +518,7 @@ form.addEventListener('submit', function(e){
   };
   console.log('Registration payload:', payload);
 
-  setTimeout(function(){
-    const ref = 'BSC-' + Math.floor(100000 + Math.random()*900000);
-    document.getElementById('refNo').textContent = 'REF: ' + ref;
-    formBody.classList.add('hide');
-    successBox.classList.add('show');
-  }, 600);
+  
 });
 </script>
 
