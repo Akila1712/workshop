@@ -378,7 +378,7 @@
             <label>Age <span class="req">*</span></label>
             <div class="input-wrap">
               <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              <input type="number" id="age" placeholder="e.g. 12" min="5" max="40">
+              <input type="number" id="age" placeholder="e.g. 12" min="5" max="20">
             </div>
             <span class="error-msg">Enter a valid age</span>
           </div>
@@ -447,6 +447,7 @@
       </div>
       <h3>Registration Successful!</h3>
       <p>Thank you for registering for the Free AI App Development Workshop.<br>Our team will contact you shortly with further details.</p>
+      <span class="ref" id="refNo">REF: BSC-000000</span>
     </div>
   </div>
 
@@ -474,7 +475,7 @@ function validate(){
   if(!studentName){ setError('f_name', true); valid = false; } else setError('f_name', false);
 
   const age = document.getElementById('age').value;
-  if(!age || age < 5 || age > 40){ setError('f_age', true); valid = false; } else setError('f_age', false);
+  if(!age || age < 5 || age > 20){ setError('f_age', true); valid = false; } else setError('f_age', false);
 
   const schoolName = document.getElementById('schoolName').value.trim();
   if(!schoolName){ setError('f_school', true); valid = false; } else setError('f_school', false);
